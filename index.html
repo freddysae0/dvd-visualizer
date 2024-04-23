@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <div>
+          <h2>Velocidad en X</h2>
+          <input type="number" id="vx" max="20" />
+        </div>
+        <div>
+          <h2>Velocidad en Y</h2>
+          <input type="number" id="vy" max="20" />
+        </div>
+      </div>
+      <canvas></canvas>
+      <img src="./dvd.png" alt="" id="dvd" />
+    </div>
+
+    <script src="snake.js"></script>
+  </body>
+
+  <style>
+    body {
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .input-container {
+      display: flex;
+      justify-content: space-around;
+    }
+    h2 {
+      color: wheat;
+    }
+    #dvd {
+      display: none;
+    }
+  </style>
+</html>
